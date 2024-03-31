@@ -10,9 +10,11 @@
 }
 .headd{
     background-color: white;    
-    width: auto;
+    width: 100%; /*auto*/
     height: 10vh;
-    position: relative;
+    position: fixed; /*relative*/
+    z-index: 1000;
+    top: 0;
     display: flex;
 }
 #main_pic{
@@ -89,28 +91,26 @@
 }
 
 .bas_foto{
-    /* background-color: black; */
+    top: 10vh;
     position: relative;
     width: auto;
-    height: 28vh;
+    height: 40vh;
     img{
-        
         width: 100%;
-        height: 28vh;
+        height: 35vh;
     }
     .img_ici_text{
         position: absolute;
         width: 15vw;
         height: 5vh;
-        top: 50%;
-        transform: translateY(-50%);
+        top: 38%;
+        transform: translateY(-38%);
         left: 10vh;
         font-weight: bold;
         color: white;
         font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 2rem;
     }
-
 }
 .slides{
     background-color: black;
@@ -118,27 +118,47 @@
     height: auto;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
+    position: relative;
     .first_row{
         background-color: white;
         left: 50%;
         margin: 1vh auto;
         width: 90%;
-        height: 65vh;
+        height: 45vh;
         .first_title{
             padding: 2px;
             padding-top: 8px;
             display: flex;
             justify-content: space-between;
-            height: 6vh;
+            height: 4vh;
         }
         .first_four_slide{
             display: flex;
             justify-content: space-between;
             background-color: brown;
-            height: 59vh;
+            height: 41vh;
             .first_11{
-                width: 25%;
+                width: 24%;
                 background-color: blue;
+            }
+            .first_12{
+                width: 24%;
+                background-color: blue;
+            }
+            .first_13{
+                width: 24%;
+                background-color: blue;
+            }
+            .first_14{
+                width: 24%;
+                background-color: blue;
+            }
+            img{
+                transition: transform 0.3s ease;
+            }
+            :hover img{
+                transform: scale(1.02);
             }
         }
     }
@@ -146,14 +166,127 @@
         background-color: skyblue;
         left: 50%;
         margin: 1vh auto;
-        width: 80%;
+        width: 90%;
         height: 45vh;
+        .second_title{
+            padding: 2px;
+            padding-top: 8px;
+            display: flex;
+            justify-content: space-between;
+            height: 4vh;
+        }
+        .second_four_slide{
+            display: flex;
+            justify-content: space-between;
+            background-color: brown;
+            height: 41vh;
+            .second_11{
+                width: 24%;
+                background-color: blue;
+            }
+            .second_12{
+                width: 24%;
+                background-color: blue;
+            }
+            .second_13{
+                width: 24%;
+                background-color: blue;
+            }
+            .second_14{
+                width: 24%;
+                background-color: blue;
+            }
+            img{
+                transition: transform 0.3s ease;
+            }
+            :hover img{
+                transform: scale(1.02);
+            }
+        }
     }
     .third_row{
         background-color: chocolate;
         left: 50%;
         margin: 1vh auto;
-        width: 80%;
+        width: 90%;
         height: 45vh;
+        .third_title{
+            padding: 2px;
+            padding-top: 8px;
+            display: flex;
+            justify-content: space-between;
+            height: 4vh;
+        }
+        .third_four_slide{
+            display: flex;
+            justify-content: space-between;
+            background-color: brown;
+            height: 41vh;
+            .third_11{
+                width: 24%;
+                background-color: blue;
+            }
+            .third_12{
+                width: 24%;
+                background-color: blue;
+            }
+            .third_13{
+                width: 24%;
+                background-color: blue;
+            }
+            .third_14{
+                width: 24%;
+                background-color: blue;
+            }
+            img{
+                transition: transform 0.3s ease;
+            }
+            :hover img{
+                transform: scale(1.02);
+            }
+        }
+    }
+    .fourth_row
+    {
+        background-color: chocolate;
+        left: 50%;
+        margin: 1vh auto;
+        width: 90%;
+        height: 45vh;
+        .fourth_title{
+            padding: 2px;
+            padding-top: 8px;
+            display: flex;
+            justify-content: space-between;
+            height: 4vh;
+        }
+        .fourth_four_slide{
+            display: flex;
+            justify-content: space-between;
+            background-color: brown;
+            height: 41vh;
+            .fourth_11{
+                width: 24%;
+                background-color: blue;
+            }
+            .fourth_12{
+                width: 24%;
+                background-color: blue;
+            }
+            .fourth_13{
+                width: 24%;
+                background-color: blue;
+            }
+            .fourth_14{
+                width: 24%;
+                background-color: blue;
+            }
+            img{
+                transition: transform 0.3s ease;
+            }
+            :hover img{
+                transform: scale(1.02);
+            }
+        }
     }
 }
