@@ -116,7 +116,7 @@
     background-color: black;
     width: 100%;
     height: auto;
-    display: flex;
+    display: grid;
     flex-direction: column;
     overflow: hidden;
     position: relative;
@@ -289,4 +289,10 @@
             }
         }
     }
+}
+/*-----------------------------------*/
+.all_slide1{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
 }
